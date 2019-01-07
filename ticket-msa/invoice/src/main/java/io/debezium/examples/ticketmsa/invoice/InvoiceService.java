@@ -7,8 +7,9 @@ import org.aerogear.kafka.cdi.annotation.KafkaConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@KafkaConfig(bootstrapServers = "#{KAFKA_SERVICE_HOST}:#{KAFKA_SERVICE_PORT}")
+
 @ApplicationScoped
+@KafkaConfig(bootstrapServers = "#{KAFKA_SERVICE_HOST}:#{KAFKA_SERVICE_PORT}")
 public class InvoiceService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(InvoiceService.class);
