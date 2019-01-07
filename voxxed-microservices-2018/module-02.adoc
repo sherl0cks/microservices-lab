@@ -195,7 +195,7 @@ $ oc exec -c zookeeper -it my-cluster-zookeeper-0 -- /opt/kafka/bin/kafka-consol
    --bootstrap-server my-cluster-kafka-bootstrap:9092 \
    --from-beginning \
    --property print.key=true \
-   --topic myorders
+   --topic orders
 ----
 
 Once done, hit Ctrl + C to exit the console consumer.
